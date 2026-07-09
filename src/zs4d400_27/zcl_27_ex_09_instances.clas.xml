@@ -5,7 +5,7 @@
    <VSEOCLASS>
     <CLSNAME>ZCL_27_EX_09_INSTANCES</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Define a Local Class</DESCRIPT>
+    <DESCRIPT>Create and Manage Instances</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
