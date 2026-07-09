@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_27_BRANCH</CLSNAME>
+    <CLSNAME>ZCL_27_EX_09_INSTANCES</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Solution: Data Processing</DESCRIPT>
+    <DESCRIPT>Define a Local Class</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

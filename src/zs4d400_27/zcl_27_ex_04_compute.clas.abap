@@ -1,4 +1,4 @@
-CLASS zcl_27_compute DEFINITION
+CLASS zcl_27_ex_04_compute DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_27_compute IMPLEMENTATION.
+CLASS zcl_27_ex_04_compute IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

@@ -1,4 +1,4 @@
-CLASS zcl_27_branch DEFINITION
+CLASS zcl_27_ex_05_branch DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_27_branch IMPLEMENTATION.
+CLASS zcl_27_ex_05_branch IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

@@ -1,4 +1,4 @@
-CLASS zcl_27_iterate DEFINITION
+CLASS zcl_27_ex_06_iterate DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_27_iterate IMPLEMENTATION.
+CLASS zcl_27_ex_06_iterate IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

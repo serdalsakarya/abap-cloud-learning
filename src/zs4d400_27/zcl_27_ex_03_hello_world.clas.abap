@@ -1,4 +1,4 @@
-CLASS zcl_27_hello_world DEFINITION
+CLASS zcl_27_ex_03_hello_world DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_27_hello_world IMPLEMENTATION.
+CLASS zcl_27_ex_03_hello_world IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
