@@ -7,9 +7,11 @@ define behavior for ZC_27FLIGHT alias Flight
 extensible
 use etag
 {
-  use create;
+field (readonly) PlaneTypeID;
+
+//  use create;
   use update;
-  use delete;
+//  use delete;
 
   use action Edit;
   use action Activate;
