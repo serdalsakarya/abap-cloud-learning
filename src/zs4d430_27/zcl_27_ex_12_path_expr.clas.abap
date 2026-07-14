@@ -23,8 +23,8 @@ CLASS ZCL_27_EX_12_PATH_EXPR IMPLEMENTATION.
            firstname,
            lastname,
            departmentid,
-           \_department-Description AS DepartmentDescription,
-           \_department\_Assistant-LastName as AssistantName,
+           DepartmentDescription,
+           Assistantname,
            \_department\_Head-LastName as HeadName
     INTO TABLE @DATA(result).
 
