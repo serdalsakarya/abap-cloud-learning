@@ -15,6 +15,7 @@ viewEnhancementCategory: [#NONE]
 @Metadata.ignorePropagatedAnnotations: true
 define view entity Z27_R_EMPLOYEE
   as select from z27employ
+  association [1] to Z27_R_Department as _Department on $projection.DepartmentId = _Department.Id
 {
   key employee_id           as EmployeeId,
       first_name            as FirstName,
@@ -30,5 +31,6 @@ define view entity Z27_R_EMPLOYEE
       created_at            as CreatedAt,
       local_last_changed_by as LocalLastChangedBy,
       local_last_changed_at as LocalLastChangedAt,
-      last_changed_at       as LastChangedAt
+      last_changed_at       as LastChangedAt,
+      _Department
 }
