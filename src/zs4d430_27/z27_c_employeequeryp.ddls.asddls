@@ -7,10 +7,11 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Employee (Query)'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define view entity Z27_C_EMPLOYEEQUERYP
   with parameters
     p_target_curr : /dmo/currency_code,
-    @EndUserText.label: 'Date of evaluation'
+    
      @Environment.systemField: #SYSTEM_DATE
     p_date        : abap.dats
   as select from Z27_R_EMPLOYEE as Employee
@@ -29,7 +30,7 @@ define view entity Z27_C_EMPLOYEEQUERYP
       _Department._Assistant.FirstName, _Department._Assistant.LastName, 1
       )                         as Assistantname,
 
-      @EndUserText.label: 'Employee Role'
+      
       case EmployeeId
       when  _Department.HeadId then 'H'
       when  _Department.AssistantId then 'A'
@@ -37,7 +38,7 @@ define view entity Z27_C_EMPLOYEEQUERYP
       //      cast('USD' as abap.cuky) as CurrencyCodeUSD,
       $parameters.p_target_curr as CurrencyCode,
 
-      @EndUserText.label: 'Annual Salary'
+      
       @Semantics.amount.currencyCode: 'CurrencyCode'
       currency_conversion(
       amount => AnnualSalary,
@@ -46,7 +47,7 @@ define view entity Z27_C_EMPLOYEEQUERYP
       exchange_rate_date => $parameters.p_date //$session.system_date
       )                         as AnnualSalaryConverted,
 
-      @EndUserText.label: 'Monthly Salary'
+      
       @Semantics.amount.currencyCode: 'CurrencyCode'
       cast($projection.AnnualSalaryConverted as abap.fltp)
       / 12.0                    as MonthlySalaryConverted,
