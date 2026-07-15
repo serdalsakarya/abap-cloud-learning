@@ -6,6 +6,7 @@ define view entity Z27_C_EMPLOYEEQUERYP
   with parameters
     p_target_curr : /dmo/currency_code,
     @EndUserText.label: 'Date of evaluation'
+     @Environment.systemField: #SYSTEM_DATE
     p_date        : abap.dats
   as select from Z27_R_EMPLOYEE
 {
