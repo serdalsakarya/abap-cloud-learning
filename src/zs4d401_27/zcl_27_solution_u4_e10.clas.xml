@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_27_SOLUTION_U3_E12</CLSNAME>
+    <CLSNAME>ZCL_27_SOLUTION_U4_E10</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Use Special Built-in Functions in ABAP SQL</DESCRIPT>
+    <DESCRIPT>Implement a Nested Join</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
@@ -16,7 +16,7 @@
     <item>
      <ID>I</ID>
      <KEY>001</KEY>
-     <ENTRY>Carrier Name:</ENTRY>
+     <ENTRY>Carrier Name</ENTRY>
      <LENGTH>20</LENGTH>
     </item>
     <item>

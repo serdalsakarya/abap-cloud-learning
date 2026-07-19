@@ -1,4 +1,4 @@
-CLASS zcl_27_solution_u2_e08 DEFINITION
+CLASS zcl_27_solution_u5_e14 DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -13,10 +13,28 @@ ENDCLASS.
 
 
 
-CLASS zcl_27_solution_u2_e08 IMPLEMENTATION.
+CLASS zcl_27_solution_u5_e14 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
+
+DATA local_date TYPE d.
+DATA local_time TYPE t.
+DATA(system_time) = cl_abap_context_info=>get_system_time( ).
+DATA(system_date) = cl_abap_context_info=>get_system_date( ).
+
+CONVERT DATE system_date
+        TIME system_time
+        TIME ZONE 'UTC'
+        INTO UTCLONG DATA(utc_timestamp).
+
+CONVERT UTCLONG utc_timestamp
+        TIME ZONE 'CET'
+        INTO date local_date
+             time local_time.
+
+out->write( |{ local_date date = ISO } - { local_time TIME = USER }| ).
+out->write(  `-------------------` ).
 
     CONSTANTS c_carrier_id TYPE /dmo/carrier_id VALUE 'LH'.
 
@@ -85,6 +103,6 @@ CLASS zcl_27_solution_u2_e08 IMPLEMENTATION.
 
 
     ENDIF.
-
+out->write( |\n ************************************\n| ).
   ENDMETHOD.
 ENDCLASS.

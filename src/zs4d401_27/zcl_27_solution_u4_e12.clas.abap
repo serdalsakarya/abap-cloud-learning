@@ -1,4 +1,4 @@
-CLASS zcl_27_solution_u3_e13 DEFINITION
+CLASS zcl_27_solution_u4_e12 DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -13,13 +13,10 @@ ENDCLASS.
 
 
 
-CLASS zcl_27_solution_u3_e13 IMPLEMENTATION.
+CLASS zcl_27_solution_u4_e12 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
-
-out->write( |Time: { cl_abap_context_info=>get_system_time( ) TIME = USER }| ).
-out->write(  `-------------------` ).
 
     CONSTANTS c_carrier_id TYPE /dmo/carrier_id VALUE 'LH'.
 
@@ -88,6 +85,6 @@ out->write(  `-------------------` ).
 
 
     ENDIF.
-out->write( |\n ************************************\n| ).
+
   ENDMETHOD.
 ENDCLASS.

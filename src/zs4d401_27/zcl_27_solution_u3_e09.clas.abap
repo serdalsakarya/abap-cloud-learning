@@ -1,4 +1,4 @@
-CLASS zcl_27_solution_u3_e11 DEFINITION
+CLASS zcl_27_solution_u3_e09 DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -13,7 +13,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_27_solution_u3_e11 IMPLEMENTATION.
+CLASS zcl_27_solution_u3_e09 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
