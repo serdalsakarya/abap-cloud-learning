@@ -11,7 +11,7 @@ define view entity Z27_C_EMPLOYEE
   as select from Z27_R_EMPLOYEE
 {
   key EmployeeId,
-      FirstName,
+      FirstName, 
       LastName,
       BirthDate,
       EntryDate,

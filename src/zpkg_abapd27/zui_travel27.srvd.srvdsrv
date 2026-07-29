@@ -1,0 +1,4 @@
+@EndUserText.label: 'Travel Service Definition'
+define service ZUI_TRAVEL27 {
+  expose ZC_TRAVEL27;
+}

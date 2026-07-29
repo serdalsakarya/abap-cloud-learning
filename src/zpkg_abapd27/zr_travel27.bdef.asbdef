@@ -1,0 +1,39 @@
+managed implementation in class zbp_r_travel27 unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZR_TRAVEL27 alias Travel
+persistent table ztravel27
+draft table ztravel_d27
+lock master
+total etag LastChangedAt
+authorization master ( global )
+early numbering
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) TravelUuid;
+  field ( readonly ) TravelId;
+  field ( readonly ) Status;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+
+  determination setInitialStatus on modify { create; }
+
+  validation validateDates on save { create; update; }
+  validation validateAgency on save { create; update; }
+
+  draft determine action Prepare
+  {
+    validation validateDates;
+    validation validateAgency;
+  }
+
+  action prepareTravel result [1] $self;
+  action bookTravel result [1] $self;
+
+}

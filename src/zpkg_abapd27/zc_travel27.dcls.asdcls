@@ -1,0 +1,9 @@
+@EndUserText.label: 'Access Control for ZC_TRAVEL27'
+@MappingRole: true
+define role ZC_TRAVEL27 {
+    grant
+        select
+            on
+                ZC_TRAVEL27; 
+                
+}

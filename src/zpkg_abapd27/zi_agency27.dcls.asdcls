@@ -1,0 +1,12 @@
+@EndUserText.label: ' ZI_AGENCY DCL(Access Control)'
+@MappingRole: true
+define role ZI_AGENCY27 {
+    grant
+        select
+            on
+                ZI_AGENCY27;
+//                    where
+//                        entity_element_1 = 'literal_value'
+//                        or entity_element_2 = aspect user;
+                        
+}
