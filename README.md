@@ -18,7 +18,7 @@ Practical exercises and development projects focused on SAP ABAP, ABAP Cloud, an
 
 ### Travel Management
 
-A RAP-based Travel Management application developed as a practical project.
+A RAP-based Travel Management application developed as a practical learning project.
 
 Topics covered:
 
@@ -42,9 +42,9 @@ Practical exercises covering:
 - Constructors
 - Local Classes
 - Internal Tables
-- CDS access
+- CDS Access
 - EML
-- Object-Oriented programming
+- Object-Oriented Programming
 
 ### ABAP Unit Testing
 
@@ -65,11 +65,15 @@ Exercises covering:
 - Parameters
 - Data Elements and Domains
 - Tables and Table Types
-- S/4HANA data modeling
+- S/4HANA Data Modeling
 
 ## Purpose
 
 This repository contains practical exercises and development projects created during my SAP ABAP Cloud learning and certification preparation.
+
+It documents my hands-on practice with modern SAP development technologies, including ABAP Cloud, RAP, CDS, OData V4 and EML.
+
+This repository is intended to document my personal learning and hands-on practice with SAP ABAP Cloud development.
 
 ## Learning Materials
 
@@ -78,5 +82,3 @@ This repository includes exercises based on SAP learning materials, including:
 - S4D400 – Introduction to ABAP Programming
 - S4D401 – ABAP Programming with SAP S/4HANA
 - S4D430 – Data Modeling in SAP S/4HANA
-
-Additional exercises were completed using SAP ABAP learning materials such as BC400, BC401, and BC430.
